@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.scss" />
+    <title>QUIZ-ARENA</title>
+  </head>
+  <body class="h-screen">
+    <div class="note">message</div>
+    <div class="home-section">
+      <div
+        class="w-[500px] h-[10px] text-white py-8 px-24 rounded-lg shadow-4xl font-bold bg-transparent"
+      >
+        <span id="welcome" class=""></span>
+      </div>
+      <div
+        class="form-container xl:w-[700px] lg:w-[600px] sm:w-[450px] w-[360px] rounded shadow-2xl mx-auto p-6 mt-8"
+        id="form-container"
+      >
+        <h2
+          class="flex align-center justify-center mb-4 text-3xl text-white bg-black font-bold p-2 rounded"
+        >
+          QUIZ ARENA
+        </h2>
+        <form
+          id="QuizForm"
+          class="flex flex-col items-center justify-center gap-2 p-3 mb-8"
+        >
+          <div class="input-container">
+            <p class="input-title">STUDENT NAME</p>
+            <input
+              id="todoInput"
+              class="border border-slate-600 rounded w-3/4 p-2"
+              type="text "
+              required
+            />
+          </div>
+          <div class="input-container">
+            <p class="input-title">PASSWORD</p>
+            <input
+              id="todoInput"
+              class="border border-slate-600 rounded w-3/4 p-2"
+              type="text"
+              required
+            />
+          </div>
+          <button
+            class="bg-black rounded text-xl px-6 text-slate-50 py-2"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="Qtncontainer"></div>
+    <button class="nextBtn">Next</button>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
