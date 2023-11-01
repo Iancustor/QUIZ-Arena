@@ -408,6 +408,12 @@ function displaySection2() {
       nextBtn.textContent = "Next Subject";
       nextBtn.addEventListener("click", function nextSubject() {
         console.log("Going to next subject");
+        // displaySection2();
+        const SectionContainer = document.querySelector(".home-section");
+        console.log(SectionContainer);
+        SectionContainer.innerHTML = ` 
+        
+        `;
       });
     }
 
