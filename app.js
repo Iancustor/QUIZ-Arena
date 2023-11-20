@@ -10,8 +10,6 @@ const typed = new Typed("#welcome", {
 
   typeSpeed: 55,
 });
-const SectionContainer = document.querySelector(".home-section");
-// console.log(SectionContainer
 
 // signing
 
