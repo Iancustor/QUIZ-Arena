@@ -35,18 +35,6 @@ QuizForm.addEventListener("submit", function submitForm(e) {
   }
 });
 
-// Subject EL
-
 function displaySection2() {
   window.location = "subjects.html";
-
-  // const note = document.querySelector(".note");
-  // console.log(note);
-  // function showNotification(message) {
-  //   note.textContent = message;
-  //   note.style.left = "10px";
-  //   setTimeout(() => {
-  //     note.style.left = "-300px";
-  //   }, 3000);
-  // }
 }

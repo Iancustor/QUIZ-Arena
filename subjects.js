@@ -293,7 +293,6 @@ const QuestionBank = [
     answer: "C",
   },
 ];
-
 SectionContainer.innerHTML = ` 
 <div class="SubjectBtns">
 <button id="subjectButtons" data-id="1" class="EngBtn">ENGLISH</button>
@@ -306,7 +305,7 @@ SectionContainer.innerHTML = `
 </div>
    `;
 const note = document.querySelector(".note");
-console.log(note);
+// console.log(note);
 function showNotification(message) {
   note.textContent = message;
   note.style.left = "10px";
@@ -329,7 +328,7 @@ buttons.forEach((button) => {
     });
     //on page load
     renderQuestion(filteredQuestions);
-    console.log(filteredQuestions);
+    // console.log(filteredQuestions);
     showNotification(`${filteredQuestions[questionNumber].category} Questions`);
     SectionContainer.style.display = "none";
     nextBtn.style.display = "flex";
@@ -337,11 +336,11 @@ buttons.forEach((button) => {
     nextBtn.addEventListener("click", function NextQuestion() {
       renderQuestion(filteredQuestions);
     });
-    console.log(nextBtn);
+    // console.log(nextBtn);
   });
 });
 const questionContainer = document.querySelector(".Qtncontainer");
-console.log(questionContainer);
+// console.log(questionContainer);
 const nextBtn = document.querySelector(".nextBtn");
 // console.log("Nextbtn clicked");
 
@@ -384,12 +383,12 @@ function renderQuestion(filteredQuestions) {
       const optionContent = optionAnswer.textContent.split(". ")[0];
       const currentQuestion = QuestionBank[questionNumber];
       const answer = currentQuestion.answer;
-      console.log(optionContent, answer);
+      // console.log(optionContent, answer);
 
       if (optionContent == answer) {
         showNotification(`${optionContent}  ,  Is a correct Answer `);
         score++;
-        console.log(score);
+        // console.log(score);
         // console.log("its a correct Answer");
         renderQuestion(filteredQuestions);
       } else {
@@ -401,9 +400,3 @@ function renderQuestion(filteredQuestions) {
     });
   });
 }
-// const storedSignIn = localStorage.getItem("cart");
-
-// let signIn = storedSignIn ? storedSignIn : [];
-
-// // Add Items to Local storage
-// localStorage.setItem("logged In", InputElms);
