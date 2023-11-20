@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.scss" />
-    <script type="module" src="app.js" defer></script>
-    <script type="module" src="subjects.js" defer></script>
+
     <title>QUIZ-ARENA</title>
+    <script type="module" crossorigin src="/assets/main-8cf94448.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/subjects-6ccaeb08.js" />
+    <link rel="stylesheet" href="/assets/subjects-863bf3e9.css" />
   </head>
   <body class="h-screen">
     <div class="home-section">
@@ -24,13 +25,6 @@
         >
           QUIZ-ARENA
         </h2>
-        <div class="flex items-center justify-center">
-          <a
-            class="bg-slate-900 text-slate-50 py-2.5 px-8 text-2xl"
-            href="/subjects.html"
-            >Start the Quiz</a
-          >
-        </div>
         <!-- <form
           id="QuizForm"
           class="flex flex-col items-center justify-center gap-2 p-3 mb-8"
@@ -60,6 +54,11 @@
             Sign In
           </button>
         </form> -->
+        <div class="flex items-center justify-center">
+          <a class="py-2.5 px-8 text-2xl" href="/subjects.html"
+            >Start the Quiz</a
+          >
+        </div>
       </div>
     </div>
     <footer class="text-white text-center">

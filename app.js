@@ -24,15 +24,11 @@ QuizForm.addEventListener("submit", function submitForm(e) {
   const InputValues = InputElms.values;
   // console.log(InputValues);
 
-  if (!InputElms.values > 0) {
+  if (!InputValues) {
     // console.log("Failled");
   } else {
     // console.log("logged in");
     InputElms.values = ``;
-    displaySection2();
+    window.location = "subjects.html";
   }
 });
-
-function displaySection2() {
-  window.location = "subjects.html";
-}
