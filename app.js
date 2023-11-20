@@ -1,6 +1,6 @@
 import Typed from "typed.js";
 
-const typed = new Typed("#welcome", {
+const typed = new Typed(".welcome", {
   strings: [
     "<i>Your Welcome To The Quiz Arena ,</i>  Insert in your Name and Password .",
     ". . . Enjoy the Ultimate power of The Brain ! ",
