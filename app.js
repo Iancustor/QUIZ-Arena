@@ -10,25 +10,3 @@ const typed = new Typed("#welcome", {
 
   typeSpeed: 55,
 });
-
-// signing
-
-const InputElms = document.querySelectorAll(".todoInput");
-
-const QuizForm = document.getElementById("QuizForm");
-// console.log(InputElms, QuizForm);
-
-// EVENT LISTENERS
-QuizForm.addEventListener("submit", function submitForm(e) {
-  e.preventDefault();
-  const InputValues = InputElms.values;
-  // console.log(InputValues);
-
-  if (!InputValues) {
-    // console.log("Failled");
-  } else {
-    // console.log("logged in");
-    InputElms.values = ``;
-    window.location = "subjects.html";
-  }
-});

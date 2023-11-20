@@ -1,20 +1,14 @@
 .form-container {
   background: linear-gradient(to bottom, $primary, rgba(179, 204, 208, 0.3));
   background-size: contain;
+  display: grid;
+  gap: 4rem;
+
   .QuizForm {
     display: flex;
     gap: 1rem;
   }
-  .input-container {
-    input {
-      width: 19rem;
-      text-align: center;
-    }
-    .input-title {
-      font-size: 1.4rem;
-      font-weight: 900;
-      color: black;
-      text-align: center;
-    }
+  .quizTitle {
+    margin-top: 2rem;
   }
 }
