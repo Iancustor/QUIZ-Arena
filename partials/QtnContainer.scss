@@ -41,4 +41,15 @@
   font-size: 22px;
   cursor: pointer;
   display: none;
+  @media (max-width: 399px) {
+    padding: 0.6rem 3rem;
+    margin-top: -7rem;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
 }

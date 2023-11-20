@@ -44,5 +44,8 @@ body {
     padding: 1rem 3rem;
     color: whitesmoke;
     max-width: 60%;
+    @media (max-width: 420px) {
+      display: none;
+    }
   }
 }
